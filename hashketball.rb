@@ -187,7 +187,8 @@ end
 
 
  def player_stats(player)
-  stats_hash={}
+  stats_hash={:assists=>7, :blocks=>15, :number=>0, :points=>12, :rebounds=>4, :shoe=>16, :slam_dunks=>10, :steals=>7}
+            got: {}
   game_hash.each do |team, attributes|
     game_hash[team].each do |attribute, value|
       if attribute == :players
